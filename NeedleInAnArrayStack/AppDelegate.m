@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "FISContainerViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,17 +17,18 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
-    
-    return YES;
+  // Override point for customization after application launch.
+  self.window.rootViewController = [[FISContainerViewController alloc] init];
+  
+  return YES;
 }
 
 - (UIWindow *)window {
-    if (!_window) {
-        self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen] bounds]];
-        [self.window makeKeyAndVisible];
-    }
-    return _window;
+  if (!_window) {
+    self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen] bounds]];
+    [self.window makeKeyAndVisible];
+  }
+  return _window;
 }
 
 
