@@ -10,6 +10,7 @@
 		0B4C2312680C04684B24B0D6 /* libPods-NeedleInAnArrayStackTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 61DB52A0FFEB7F5FDB90C1C7 /* libPods-NeedleInAnArrayStackTests.a */; };
 		7228043D1A85240300951C7B /* FISSearchManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7228043C1A85240300951C7B /* FISSearchManager.m */; };
 		7228043F1A85242300951C7B /* FISSearchManagerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 7228043E1A85242300951C7B /* FISSearchManagerSpec.m */; };
+		722804411A85451900951C7B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 722804401A85451900951C7B /* Default-568h@2x.png */; };
 		729EA5431A72F0FD00B2B20D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 729EA5421A72F0FD00B2B20D /* main.m */; };
 		729EA5461A72F0FD00B2B20D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 729EA5451A72F0FD00B2B20D /* AppDelegate.m */; };
 		729EA54E1A72F0FD00B2B20D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 729EA54D1A72F0FD00B2B20D /* Images.xcassets */; };
@@ -31,6 +32,7 @@
 		7228043B1A85240300951C7B /* FISSearchManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISSearchManager.h; sourceTree = "<group>"; };
 		7228043C1A85240300951C7B /* FISSearchManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISSearchManager.m; sourceTree = "<group>"; };
 		7228043E1A85242300951C7B /* FISSearchManagerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISSearchManagerSpec.m; sourceTree = "<group>"; };
+		722804401A85451900951C7B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
 		729EA53D1A72F0FD00B2B20D /* NeedleInAnArrayStack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeedleInAnArrayStack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		729EA5411A72F0FD00B2B20D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		729EA5421A72F0FD00B2B20D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 		729EA5401A72F0FD00B2B20D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				722804401A85451900951C7B /* Default-568h@2x.png */,
 				729EA5411A72F0FD00B2B20D /* Info.plist */,
 				729EA5421A72F0FD00B2B20D /* main.m */,
 			);
@@ -220,6 +223,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				729EA54E1A72F0FD00B2B20D /* Images.xcassets in Resources */,
+				722804411A85451900951C7B /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
