@@ -8,31 +8,63 @@
 
 #import "Specta.h"
 #import "FISSearchManager.h"
-
+#define EXP_SHORTHAND
+#import <Expecta.h>
 
 SpecBegin(FISSearchManager)
 
 describe(@"FISSearchManager", ^{
-    
-    beforeAll(^{
-
+  __block NSArray *unsortedArray = @[@4, @1, @2, @3, @9, @7, @8, @6, @5];
+  __block NSArray *sortedArray = @[@1, @2, @3, @4, @5, @6, @7, @8, @9];
+  
+  describe(@"performing a linear search for an item on an unsorted array", ^{
+    context(@"where the item exists in the array", ^{
+      it(@"should return the index of the item in the array",^{
+        NSUInteger foundIndex = [FISSearchManager linearUnorderedSearchForItem:@8 inArray:unsortedArray];
+        expect(foundIndex).to.equal(6);
+      });
     });
     
-    beforeEach(^{
-
+    context(@"where the item does not exist in the array", ^{
+      it(@"should return NSNotFound",^{
+        NSUInteger foundIndex = [FISSearchManager linearUnorderedSearchForItem:@10 inArray:unsortedArray];
+        expect(foundIndex).to.equal(NSNotFound);
+      });
+    });
+  });
+  
+  describe(@"performing a linear search on an sorted array", ^{
+    context(@"where the item exists in the array", ^{
+      it(@"should return the index of the item in the array",^{
+        NSUInteger foundIndex = [FISSearchManager linearOrderedSearchForItem:@8 inArray:sortedArray];
+        expect(foundIndex).to.equal(7);
+      });
     });
     
-    it(@"", ^{
-
-    });  
-    
-    afterEach(^{
-
+    context(@"where the item does not exist in the array", ^{
+      it(@"should return NSNotFound",^{
+        NSUInteger foundIndex = [FISSearchManager linearOrderedSearchForItem:@12 inArray:sortedArray];
+        expect(foundIndex).to.equal(NSNotFound);
+      });
+    });
+  });
+  
+  describe(@"perforiming a binary search on a sorted array", ^{
+    context(@"where the item exists in the array", ^{
+      it(@"should return the index of the item in the array",^{
+        NSUInteger foundIndex = [FISSearchManager binarySearchForItem:@8 inArray:sortedArray];
+        expect(foundIndex).to.equal(7);
+      });
     });
     
-    afterAll(^{
-
+    context(@"where the item does not exist in the array", ^{
+      it(@"should return NSNotFound",^{
+        NSUInteger foundIndex = [FISSearchManager binarySearchForItem:@12 inArray:sortedArray];
+        expect(foundIndex).to.equal(NSNotFound);
+      });
     });
+    
+  });
 });
 
 SpecEnd
