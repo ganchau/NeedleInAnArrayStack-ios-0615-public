@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0B4C2312680C04684B24B0D6 /* libPods-NeedleInAnArrayStackTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 61DB52A0FFEB7F5FDB90C1C7 /* libPods-NeedleInAnArrayStackTests.a */; };
+		7228043D1A85240300951C7B /* FISSearchManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7228043C1A85240300951C7B /* FISSearchManager.m */; };
+		7228043F1A85242300951C7B /* FISSearchManagerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 7228043E1A85242300951C7B /* FISSearchManagerSpec.m */; };
 		729EA5431A72F0FD00B2B20D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 729EA5421A72F0FD00B2B20D /* main.m */; };
 		729EA5461A72F0FD00B2B20D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 729EA5451A72F0FD00B2B20D /* AppDelegate.m */; };
 		729EA54E1A72F0FD00B2B20D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 729EA54D1A72F0FD00B2B20D /* Images.xcassets */; };
@@ -26,6 +28,9 @@
 /* Begin PBXFileReference section */
 		04297E01E0A7B6A04270A5EE /* Pods-NeedleInAnArrayStackTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NeedleInAnArrayStackTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NeedleInAnArrayStackTests/Pods-NeedleInAnArrayStackTests.debug.xcconfig"; sourceTree = "<group>"; };
 		61DB52A0FFEB7F5FDB90C1C7 /* libPods-NeedleInAnArrayStackTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NeedleInAnArrayStackTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7228043B1A85240300951C7B /* FISSearchManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISSearchManager.h; sourceTree = "<group>"; };
+		7228043C1A85240300951C7B /* FISSearchManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISSearchManager.m; sourceTree = "<group>"; };
+		7228043E1A85242300951C7B /* FISSearchManagerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISSearchManagerSpec.m; sourceTree = "<group>"; };
 		729EA53D1A72F0FD00B2B20D /* NeedleInAnArrayStack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeedleInAnArrayStack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		729EA5411A72F0FD00B2B20D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		729EA5421A72F0FD00B2B20D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -90,6 +95,8 @@
 			children = (
 				729EA5441A72F0FD00B2B20D /* AppDelegate.h */,
 				729EA5451A72F0FD00B2B20D /* AppDelegate.m */,
+				7228043B1A85240300951C7B /* FISSearchManager.h */,
+				7228043C1A85240300951C7B /* FISSearchManager.m */,
 				729EA54D1A72F0FD00B2B20D /* Images.xcassets */,
 				729EA5401A72F0FD00B2B20D /* Supporting Files */,
 			);
@@ -109,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				729EA55A1A72F0FD00B2B20D /* Supporting Files */,
+				7228043E1A85242300951C7B /* FISSearchManagerSpec.m */,
 			);
 			path = NeedleInAnArrayStackTests;
 			sourceTree = "<group>";
@@ -262,6 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7228043D1A85240300951C7B /* FISSearchManager.m in Sources */,
 				729EA5461A72F0FD00B2B20D /* AppDelegate.m in Sources */,
 				729EA5431A72F0FD00B2B20D /* main.m in Sources */,
 			);
@@ -271,6 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7228043F1A85242300951C7B /* FISSearchManagerSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
