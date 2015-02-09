@@ -15,7 +15,7 @@ SpecBegin(FISSearchManager)
 
 describe(@"FISSearchManager", ^{
   __block NSArray *unsortedArray = @[@4, @1, @2, @3, @9, @7, @8, @6, @5];
-  __block NSArray *sortedArray = @[@1, @2, @3, @4, @5, @6, @7, @8, @9];
+  __block NSArray *sortedArray = @[@1, @2, @4, @5, @7, @8, @9];
   
   describe(@"performing a linear search for an item on an unsorted array", ^{
     context(@"where the item exists in the array", ^{
@@ -36,14 +36,14 @@ describe(@"FISSearchManager", ^{
   describe(@"performing a linear search on an sorted array", ^{
     context(@"where the item exists in the array", ^{
       it(@"should return the index of the item in the array",^{
-        NSUInteger foundIndex = [FISSearchManager linearOrderedSearchForItem:@8 inArray:sortedArray];
-        expect(foundIndex).to.equal(7);
+        NSUInteger foundIndex = [FISSearchManager linearOrderedSearchForItem:@2 inArray:sortedArray];
+        expect(foundIndex).to.equal(1);
       });
     });
     
     context(@"where the item does not exist in the array", ^{
       it(@"should return NSNotFound",^{
-        NSUInteger foundIndex = [FISSearchManager linearOrderedSearchForItem:@12 inArray:sortedArray];
+        NSUInteger foundIndex = [FISSearchManager linearOrderedSearchForItem:@0 inArray:sortedArray];
         expect(foundIndex).to.equal(NSNotFound);
       });
     });
@@ -53,7 +53,7 @@ describe(@"FISSearchManager", ^{
     context(@"where the item exists in the array", ^{
       it(@"should return the index of the item in the array",^{
         NSUInteger foundIndex = [FISSearchManager binarySearchForItem:@8 inArray:sortedArray];
-        expect(foundIndex).to.equal(7);
+        expect(foundIndex).to.equal(5);
       });
     });
     
