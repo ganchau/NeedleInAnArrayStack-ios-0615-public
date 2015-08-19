@@ -10,4 +10,8 @@
 
 @interface FISSearchManager : NSObject
 
++ (NSUInteger)linearOrderedSearchForItem:(id)item inArray:(NSArray *)array;
++ (NSUInteger)linearUnorderedSearchForItem:(id)item inArray:(NSArray *)array;
++ (NSUInteger)binarySearchForItem:(id)item inArray:(NSArray *)array;
+
 @end
